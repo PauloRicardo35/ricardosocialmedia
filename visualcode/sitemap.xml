@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+        
+  <!-- Página Principal -->
+  <url>
+    <loc>https://ricardosocialmedia.com/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ricardosocialmedia.com/assets/og-image.jpg</image:loc>
+      <image:title>Ricardo Social Media - Especialista em Tráfego Pago</image:title>
+      <image:caption>Gestão de tráfego pago e mídias sociais para negócios</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Página Blog -->
+  <url>
+    <loc>https://ricardosocialmedia.com/blog.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Páginas Legais -->
+  <url>
+    <loc>https://ricardosocialmedia.com/politica-privacidade.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://ricardosocialmedia.com/termos-uso.html</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

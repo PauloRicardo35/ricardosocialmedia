@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada - Ricardo Social Media</title>
+    <meta name="description" content="Página não encontrada. Volte para a página inicial do Ricardo Social Media - Especialista em Tráfego Pago.">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema para Página de Erro -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Página Não Encontrada - Ricardo Social Media",
+        "description": "Página de erro 404 - Ricardo Social Media",
+        "url": "https://seusite.netlify.app/404.html",
+        "mainEntity": {
+            "@type": "WebPage",
+            "name": "Ricardo Social Media - Página Inicial",
+            "url": "https://seusite.netlify.app/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h2>Ricardo Social Media</h2>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="index.html#contato" class="cta-button">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero" style="min-height: 60vh; display: flex; align-items: center;">
+            <div class="container" style="text-align: center;">
+                <h1 style="font-size: 4rem; margin-bottom: 1rem;">404</h1>
+                <h2 style="margin-bottom: 2rem;">Página Não Encontrada</h2>
+                <p style="margin-bottom: 2rem; font-size: 1.2rem;">
+                    A página que você está procurando não existe ou foi movida.
+                </p>
+                <div class="hero-buttons">
+                    <a href="index.html" class="btn-primary">Voltar para Home</a>
+                    <a href="blog.html" class="btn-secondary">Ver Blog</a>
+                    <a href="index.html#contato" class="btn-tertiary">Falar com Especialista</a>
+                </div>
+                
+                <!-- Sugestões de páginas -->
+                <div style="margin-top: 3rem; padding: 2rem; background: var(--background-alt); border-radius: 10px;">
+                    <h3 style="margin-bottom: 1rem;">Talvez você esteja procurando por:</h3>
+                    <div class="suggestions-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <a href="index.html#servicos" class="suggestion-link">Nossos Serviços</a>
+                        <a href="blog.html" class="suggestion-link">Cases de Sucesso</a>
+                        <a href="index.html#portfolio" class="suggestion-link">Portfólio</a>
+                        <a href="index.html#contato" class="suggestion-link">Contato</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Ricardo Social Media. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <style>
+        .suggestion-link {
+            display: block;
+            padding: 1rem;
+            background: white;
+            border-radius: 5px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            text-align: center;
+            transition: var(--transition);
+            border: 1px solid var(--border);
+        }
+        
+        .suggestion-link:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</body>
+</html>

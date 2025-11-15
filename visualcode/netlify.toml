@@ -1,0 +1,85 @@
+[build]
+  publish = "."
+  command = "echo 'No build command needed'"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+# Redirections para URLs amigáveis
+[[redirects]]
+  from = "/blog"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/portfolio"
+  to = "/blog.html"
+  status = 200
+
+[[redirects]]
+  from = "/servicos"
+  to = "/index.html#servicos"
+  status = 302
+
+[[redirects]]
+  from = "/contato"
+  to = "/index.html#contato"
+  status = 302
+
+[[redirects]]
+  from = "/privacidade"
+  to = "/politica-privacidade.html"
+  status = 200
+
+[[redirects]]
+  from = "/termos"
+  to = "/termos-uso.html"
+  status = 200
+
+# Prevenção de acesso a arquivos sensíveis
+[[redirects]]
+  from = "/.env"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/package.json"
+  to = "/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/node_modules/*"
+  to = "/404.html"
+  status = 404
+
+# Otimizações de cabeçalhos para performance e SEO
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Configuração para SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
